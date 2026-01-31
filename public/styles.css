@@ -1,0 +1,84 @@
+:root {
+  --accept-bg: #d3f3d0;
+  --reject-bg: #f8d0d0;
+  --selected-border: #0d6efd;
+}
+
+body {
+  background: linear-gradient(135deg, #f4f7fa 0%, #e9f1f6 100%);
+}
+
+.file-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.file-item {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.file-item.selected {
+  border-left: 4px solid var(--selected-border);
+  font-weight: 600;
+}
+
+.file-item.status-accept {
+  background-color: var(--accept-bg);
+}
+
+.file-item.status-reject {
+  background-color: var(--reject-bg);
+}
+
+.image-wrap {
+  height: 325px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  cursor: grab;
+  user-select: none;
+}
+
+.image-wrap img:active {
+  cursor: grabbing;
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+.xml-body {
+  height: 700px;
+}
+
+.files-body {
+  height: 700px;
+}
+
+#saveToast {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#saveToast.show {
+  display: block;
+  opacity: 1;
+}
+
+#copyToast {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+#copyToast.show {
+  display: block;
+  opacity: 1;
+}

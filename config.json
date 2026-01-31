@@ -1,0 +1,7 @@
+{
+  "sbgn": "./review_files/PD_sbgnml",
+  "old_png": "./review_files/PD_png",
+  "new_png": "./review_files/output_sbgn-rust_png_PD",
+  "output": "./review_files/output",
+  "max_image_dimension": 1200
+}
