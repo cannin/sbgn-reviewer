@@ -2,6 +2,8 @@
 
 A lightweight Node.js + Bootstrap app for reviewing SBGN triplets (SBGN XML, old PNG, new PNG) with status tracking and editable XML.
 
+![sbgn_reviewer_screenshot.png](sbgn_reviewer_screenshot.png)
+
 ## Features
 - Loads triplets with matching basenames across `.sbgn` and `.png` files.
 - Editable, syntax-highlighted XML with CodeMirror.
